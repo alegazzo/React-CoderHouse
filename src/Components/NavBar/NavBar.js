@@ -1,11 +1,12 @@
 import dalaranLogo from '../../assets/img/dalaran-shop-logo.png';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 export default function NavBar(){
     return(
         <div className="navBar">
-        <img className='dalaranLogo' src={dalaranLogo}/>   
+        <Link to="/"><img className='dalaranLogo' src={dalaranLogo}/></Link>   
         <nav>
             <ul>
                 <li><a href='#'>Armas</a></li>
